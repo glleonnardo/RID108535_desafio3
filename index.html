@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board de tarefas | Desafio 3 DNC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <main id="mainContainer">
+      <h1>Board de tarefas</h1>
+      <section>
+        <form action="" id="formTask">
+          <input
+            type="text"
+            name="taskName"
+            id="taskName"
+            aria-label="Nome da tarefa"
+            placeholder="Nome da tarefa"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            name="sticker"
+            id="sticker"
+            aria-label="Etiqueta"
+            placeholder="Etiqueta"
+            autocomplete="off"
+          />
+          <button id="sendTask">+</button>
+        </form>
+      </section>
+
+      <section>
+        <ul id="taskList"></ul>
+      </section>
+      <div id="footer">
+        <span id="counterTasks"></span>
+        <button onclick="finishDoneTasks()" id="doneTasks">
+          Remover concluídas
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
